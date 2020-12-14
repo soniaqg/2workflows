@@ -42,5 +42,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          email_author=$(cat $GITHUB_EVENT_PATH | jq '.head_commit.author.email')
+          email_author=$(cat $GITHUB_EVENT_PATH | jq '.')
           echo "$email_author"
