@@ -42,4 +42,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          cat $GITHUB_EVENT_PATH
+          cat $GITHUB_EVENT_PATH | jq .commits.author.email
